@@ -1,0 +1,14 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.saschahuth.imeigetter"
+        minSdkVersion 10
+        targetSdkVersion 22 //need to stay below 23 here, otherwise we'd have to grant the READ_PHONE_STATE permission at runtime
+        versionCode 1
+        versionName "1.0"
+    }
+}
